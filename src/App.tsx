@@ -7,6 +7,22 @@ import trainingClassroom from './assets/training-classroom.png'
 import trainingTeam from './assets/training-team.png'
 import trainingWaterRescue from './assets/training-water-rescue.png'
 
+// Group of companies logos
+import matrixCorporateLogo from './assets/logos/matrix-corporate.png'
+import starmatrixLogo from './assets/logos/starmatrix.png'
+import summitProtectionLogo from './assets/logos/summit-protection.png'
+
+// Credential logos
+import operatingLicenseLogo from './assets/logos/operating-license.png'
+import qmsLogo from './assets/logos/qms.png'
+import membershipLogo from './assets/logos/membership.png'
+import agencyLogo from './assets/logos/agency.png'
+import laborLogo from './assets/logos/labor.png'
+import taxLogo from './assets/logos/tax.png'
+import lguLogo from './assets/logos/lgu.png'
+import firearmsLogo from './assets/logos/firearms.png'
+import trainingCredLogo from './assets/logos/training.png'
+
 // Client logos
 import smartLogo from './assets/logos/smart.png'
 import pldtLogo from './assets/logos/pldt.png'
@@ -451,7 +467,11 @@ const previousTrainingImage = () => {
                 </div>
 
                 <div className="group-item">
-                  <span className="dot">▸</span>
+                  <img
+                    src={matrixCorporateLogo}
+                    alt="Matrix Corporate Security and General Services, Inc. logo"
+                    className="group-logo"
+                  />
                   <div>
                     <b>Matrix Corporate Security and General Services, Inc.</b>
                     <span>Sister security company</span>
@@ -459,7 +479,11 @@ const previousTrainingImage = () => {
                 </div>
 
                 <div className="group-item">
-                  <span className="dot">▸</span>
+                  <img
+                    src={starmatrixLogo}
+                    alt="Starmatrix Security Agency, Inc. logo"
+                    className="group-logo"
+                  />
                   <div>
                     <b>Starmatrix Security Agency, Inc.</b>
                     <span>Sister security company</span>
@@ -467,7 +491,11 @@ const previousTrainingImage = () => {
                 </div>
 
                 <div className="group-item">
-                  <span className="dot">▸</span>
+                  <img
+                    src={summitProtectionLogo}
+                    alt="Summit Protection Security Training Center, Inc. logo"
+                    className="group-logo"
+                  />
                   <div>
                     <b>Summit Protection Security Training Center, Inc.</b>
                     <span>
@@ -708,50 +736,59 @@ const previousTrainingImage = () => {
           </div>
 
           <div className="cred-grid reveal">
-             <div className="cred-card">
-             <div className="cn">OPERATING LICENSE</div>
-             <h4>PNP-SOSIA License to Operate</h4>
-            <p>PSA-WGS-000288-2023 · Valid until Oct 25</p>
+            <div className="cred-card">
+              <img src={operatingLicenseLogo} alt="" className="cred-logo" />
+              <div className="cn">OPERATING LICENSE</div>
+              <h4>PNP-SOSIA License to Operate</h4>
+              <p>PSA-WGS-000288-2023 · Valid until Oct 25</p>
             </div>
             <div className="cred-card">
+              <img src={qmsLogo} alt="" className="cred-logo" />
               <div className="cn">QMS</div>
               <h4>ISO 9001-2015 Certified</h4>
               <p>Quality management system certification</p>
             </div>
             <div className="cred-card">
+              <img src={membershipLogo} alt="" className="cred-logo" />
               <div className="cn">MEMBERSHIP</div>
               <h4>TAPA APAC</h4>
               <p>Transported Asset Protection Association — Asia Pacific</p>
             </div>
             <div className="cred-card">
+              <img src={agencyLogo} alt="" className="cred-logo" />
               <div className="cn">AGENCY</div>
               <h4>PADPAO Certificate</h4>
               <p>Philippine Association of Detective &amp; Protective Agency Operators</p>
             </div>
             <div className="cred-card">
+              <img src={laborLogo} alt="" className="cred-logo" />
               <div className="cn">LABOR</div>
               <h4>DOLE 174</h4>
               <p>Department of Labor and Employment registration</p>
             </div>
             <div className="cred-card">
+              <img src={taxLogo} alt="" className="cred-logo" />
               <div className="cn">TAX</div>
               <h4>BIR 2303</h4>
               <p>Bureau of Internal Revenue Certificate of Registration</p>
             </div>
             <div className="cred-card">
+              <img src={lguLogo} alt="" className="cred-logo" />
               <div className="cn">LGU</div>
               <h4>Business Permit 2025–2026</h4>
               <p>Current local government operating permit</p>
             </div>
             <div className="cred-card">
+              <img src={firearmsLogo} alt="" className="cred-logo" />
               <div className="cn">FIREARMS</div>
               <h4>License to Own &amp; Possess Firearms</h4>
               <p>Company-held firearms license</p>
             </div>
             <div className="cred-card">
-             <div className="cn">TRAINING</div>
-             <h4>CDC Accreditation</h4>
-             <p>Accredited civil / drug testing &amp; screening center</p>
+              <img src={trainingCredLogo} alt="" className="cred-logo" />
+              <div className="cn">TRAINING</div>
+              <h4>CDC Accreditation</h4>
+              <p>Accredited civil / drug testing &amp; screening center</p>
             </div>
           </div>
         </div>
