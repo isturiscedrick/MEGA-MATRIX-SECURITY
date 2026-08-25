@@ -1,9 +1,11 @@
-import { useEffect } from 'react'
-
+import { useEffect, useState } from 'react'
 import logoSeal from './assets/logo-seal.png'
 import heroUniforms from './assets/hero-uniforms.png'
-import fleetVehicle from './assets/fleet-vehicle.jpg'
-import trainingGroup from './assets/training-group.jpg'
+import fleetVehicle from './assets/fleet-vehicle.png'
+import trainingGroup from './assets/training-group.png'
+import trainingClassroom from './assets/training-classroom.png'
+import trainingTeam from './assets/training-team.png'
+import trainingWaterRescue from './assets/training-water-rescue.png'
 
 // Client logos
 import smartLogo from './assets/logos/smart.png'
@@ -36,6 +38,37 @@ import cignalLogo from './assets/logos/cignal.png'
 import './App.css'
 
 function App() {
+  const trainingImages = [
+  {
+    src: trainingGroup,
+    alt: 'Mega-Matrix Security personnel during field training',
+  },
+  {
+    src: trainingClassroom,
+    alt: 'Mega-Matrix Security personnel attending classroom training',
+  },
+  {
+    src: trainingTeam,
+    alt: 'Mega-Matrix Security personnel during team training',
+  },
+  {
+    src: trainingWaterRescue,
+    alt: 'Mega-Matrix Security personnel during water rescue training',
+  },
+]
+
+const [trainingIndex, setTrainingIndex] = useState(0)
+
+const nextTrainingImage = () => {
+  setTrainingIndex((current) => (current + 1) % trainingImages.length)
+}
+
+const previousTrainingImage = () => {
+  setTrainingIndex(
+    (current) =>
+      (current - 1 + trainingImages.length) % trainingImages.length
+  )
+}
   useEffect(() => {
     const yearEl = document.getElementById('year')
     if (yearEl) yearEl.textContent = String(new Date().getFullYear())
@@ -489,12 +522,51 @@ function App() {
       <section className="section-pad" style={{ background: 'var(--paper-2)' }} id="training">
         <div className="wrap">
           <div className="training-grid">
-            <div className="reveal">
-              <img
-                src={trainingGroup}
-                alt="Mega-Matrix Security personnel during field training and water-rescue seminar"
-              />
-            </div>
+            <div className="training-gallery reveal">
+  <div className="training-slider">
+
+    <img
+      src={trainingImages[trainingIndex].src}
+      alt={trainingImages[trainingIndex].alt}
+    />
+
+    <button
+      type="button"
+      className="training-arrow training-prev"
+      onClick={previousTrainingImage}
+      aria-label="Previous training photo"
+    >
+      ‹
+    </button>
+
+    <button
+      type="button"
+      className="training-arrow training-next"
+      onClick={nextTrainingImage}
+      aria-label="Next training photo"
+    >
+      ›
+    </button>
+
+    <div className="training-counter">
+      {trainingIndex + 1} / {trainingImages.length}
+    </div>
+  </div>
+
+  <div className="training-dots">
+    {trainingImages.map((_, index) => (
+      <button
+        key={index}
+        type="button"
+        className={`training-dot ${
+          trainingIndex === index ? 'active' : ''
+        }`}
+        onClick={() => setTrainingIndex(index)}
+        aria-label={`View training photo ${index + 1}`}
+      />
+    ))}
+  </div>
+</div>
 
             <div className="reveal">
               <div className="eyebrow">Readiness</div>

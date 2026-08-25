@@ -423,3 +423,148 @@ footer{background:var(--ink); color:#8FA0BE; padding:34px 0; border-top:1px soli
   .reveal{opacity:1; transform:none; transition:none;}
   .btn:hover, .client-logo:hover, .cred-card:hover, .vm-card:hover, .lead-card:hover{transform:none;}
 }
+/* ===== TRAINING PHOTO SLIDER ===== */
+
+.training-gallery {
+  width: 100%;
+}
+
+.training-slider {
+  position: relative;
+  border: 1px solid var(--line);
+  padding: 8px;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.training-slider img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== TRAINING ARROWS ===== */
+
+.training-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 46px;
+  height: 46px;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(11, 27, 51, 0.78);
+
+  color: #fff;
+  font-size: 34px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s var(--ease),
+    transform 0.2s var(--ease);
+}
+
+.training-arrow:hover {
+  background: var(--red);
+}
+
+.training-arrow:active {
+  transform: translateY(-50%) scale(0.94);
+}
+
+.training-prev {
+  left: 20px;
+}
+
+.training-next {
+  right: 20px;
+}
+
+/* ===== IMAGE COUNTER ===== */
+
+.training-counter {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+
+  background: rgba(11, 27, 51, 0.82);
+  color: #fff;
+
+  padding: 6px 10px;
+
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+/* ===== TRAINING DOTS ===== */
+
+.training-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.training-dot {
+  width: 8px;
+  height: 8px;
+
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+
+  background: #b8b5ac;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s var(--ease),
+    background 0.2s var(--ease);
+}
+
+.training-dot:hover {
+  transform: scale(1.3);
+}
+
+.training-dot.active {
+  background: var(--red);
+  transform: scale(1.3);
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 640px) {
+  .training-slider img {
+    height: 260px;
+  }
+
+  .training-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 28px;
+  }
+
+  .training-prev {
+    left: 14px;
+  }
+
+  .training-next {
+    right: 14px;
+  }
+
+  .training-counter {
+    right: 14px;
+    bottom: 14px;
+  }
+}
