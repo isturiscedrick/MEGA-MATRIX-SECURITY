@@ -166,7 +166,6 @@ const previousTrainingImage = () => {
               <li><a href="#presence">Nationwide</a></li>
               <li><a href="#clients">Clients</a></li>
               <li><a href="#credentials">Credentials</a></li>
-              <li><a href="#contact" className="nav-cta">Request a Quote</a></li>
             </ul>
           </nav>
         </div>
