@@ -40,12 +40,12 @@ import './App.css'
 function App() {
   const trainingImages = [
   {
-    src: trainingGroup,
-    alt: 'Mega-Matrix Security personnel during field training',
-  },
-  {
     src: trainingClassroom,
     alt: 'Mega-Matrix Security personnel attending classroom training',
+  },
+  {
+    src: trainingGroup,
+    alt: 'Mega-Matrix Security personnel during field training',
   },
   {
     src: trainingTeam,
