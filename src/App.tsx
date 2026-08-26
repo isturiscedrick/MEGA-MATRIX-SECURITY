@@ -24,32 +24,32 @@ import firearmsLogo from "./assets/logos/firearms.png";
 import trainingCredLogo from "./assets/logos/training.png";
 
 // Client logos
-import smartLogo from "./assets/logos/smart.png";
-import pldtLogo from "./assets/logos/pldt.png";
-import digitelSunLogo from "./assets/logos/digitel-sun.png";
+// import smartLogo from "./assets/logos/smart.png";
+// import pldtLogo from "./assets/logos/pldt.png";
+// import digitelSunLogo from "./assets/logos/digitel-sun.png";
 
-import unityDigitalLogo from "./assets/logos/unity-digital.png";
-import edotcoLogo from "./assets/logos/edotco.png";
-import edgepointLogo from "./assets/logos/edgepoint.png";
-import frontierTowerLogo from "./assets/logos/frontier-tower.png";
+// import unityDigitalLogo from "./assets/logos/unity-digital.png";
+// import edotcoLogo from "./assets/logos/edotco.png";
+// import edgepointLogo from "./assets/logos/edgepoint.png";
+// import frontierTowerLogo from "./assets/logos/frontier-tower.png";
 
-import unionbankLogo from "./assets/logos/unionbank.png";
-import citysavingsLogo from "./assets/logos/citysavings.png";
+// import unionbankLogo from "./assets/logos/unionbank.png";
+// import citysavingsLogo from "./assets/logos/citysavings.png";
 
-import sanMiguelFoodsLogo from "./assets/logos/san-miguel-foods.png";
-import purefoodsLogo from "./assets/logos/purefoods.png";
+// import sanMiguelFoodsLogo from "./assets/logos/san-miguel-foods.png";
+// import purefoodsLogo from "./assets/logos/purefoods.png";
 
-import ortigasResidenceLogo from "./assets/logos/ortigas-residence.png";
-import cargoSafewayLogo from "./assets/logos/cargo-safeway.png";
+// import ortigasResidenceLogo from "./assets/logos/ortigas-residence.png";
+// import cargoSafewayLogo from "./assets/logos/cargo-safeway.png";
 
-import essilorLogo from "./assets/logos/essilor.png";
+// import essilorLogo from "./assets/logos/essilor.png";
 
-import philexLogo from "./assets/logos/philex.png";
-import nissanLogo from "./assets/logos/nissan.png";
+// import philexLogo from "./assets/logos/philex.png";
+// import nissanLogo from "./assets/logos/nissan.png";
 
-import lifelineLogo from "./assets/logos/lifeline.png";
-import tv5Logo from "./assets/logos/tv5.png";
-import cignalLogo from "./assets/logos/cignal.png";
+// import lifelineLogo from "./assets/logos/lifeline.png";
+// import tv5Logo from "./assets/logos/tv5.png";
+// import cignalLogo from "./assets/logos/cignal.png";
 
 import "./App.css";
 
@@ -225,10 +225,10 @@ function App() {
               </p>
 
               <div className="hero-actions">
-                <a href="#contact" className="btn btn-primary">
+                {/* <a href="#contact" className="btn btn-primary">
                   Request a Security Assessment
-                </a>
-                <a href="#services" className="btn btn-ghost">
+                </a> */}
+                <a href="#services" className="btn btn-primary">
                   View Services
                 </a>
               </div>
@@ -665,9 +665,10 @@ function App() {
       {/* CLIENTS */}
       <section
         // className="section-pad"
+        style={{ visibility: "hidden" }}
         id="clients"
       >
-        <div style={{ visibility: "hidden" }} className="wrap">
+        {/* <div style={{ visibility: "hidden" }} className="wrap">
           <div className="eyebrow reveal">Who We Protect</div>
 
           <div className="head-row reveal">
@@ -793,7 +794,7 @@ function App() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* CREDENTIALS */}
@@ -924,16 +925,16 @@ function App() {
       <section className="section-pad contact-section" id="contact">
         <div className="wrap">
           <div className="contact-grid">
-            <div style={{ visibility: "hidden" }} className="reveal">
+            <div className="reveal">
               <div className="eyebrow">Get In Touch</div>
-              <h2>Request a site assessment.</h2>
+              {/* <h2>Request a site assessment.</h2>
               <p className="lead">
                 Tell us about your site — location, headcount, and current
                 coverage gaps — and an operations manager will follow up to
                 scope a deployment plan.
-              </p>
+              </p> */}
 
-              <div className="hero-actions" style={{ marginTop: 28 }}>
+              {/* <div className="hero-actions" style={{ marginTop: 28 }}>
                 <a
                   href="mailto:jpasetes.megamatrix@gmail.com"
                   className="btn btn-primary"
@@ -943,7 +944,7 @@ function App() {
                 <a href="tel:+639695592376" className="btn btn-ghost">
                   Call COO Direct
                 </a>
-              </div>
+              </div> */}
             </div>
 
             <div className="reveal contact-full-width">
